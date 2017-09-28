@@ -7,9 +7,9 @@ vowels=0
 syllables=0
 
 for c in sys.stdin.read():
-	if c in '''аэиоуеёйөүюя': 
+	if c in 'аэиоуеёйөүюя': 
 		vowels=vowels+1
-	if c==':
+	if c=='/n':
 		lines=lines+1
 	characters=characters+1
 	if c==' ':

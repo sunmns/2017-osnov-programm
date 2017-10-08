@@ -11,7 +11,7 @@ for c in sys.stdin.readlines():
 	c=c.split(' ')
 	print(sent_id)
 	for a in c:
-		print(number, a,'_\t_\t_\t_\t_\t_\t_\t_')
+		print('%d\t%s\t_\t_\t_\t_\t_\t_\t_t_'%(number,a))
 		number=number+1
 	sent_id=sent_id+1
 

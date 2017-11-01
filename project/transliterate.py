@@ -10,7 +10,7 @@ for c in sys.stdin.readlines():
 	c=c.replace(':', ' :')
 	c=c.replace(';', ' ;')
 	c=c.split(' ')
-	print(sent_id)
+	print('#sent_id=%d'%(sent_id))
 	for a in c:
 		print('%d\t%s\t_\t_\t_\t_\t_\t_\t_\ttranslit=%s'%(number,a,a.translate(dict)))
 		number=number+1
